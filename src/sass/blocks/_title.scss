@@ -4,7 +4,8 @@
     line-height: 60px;
     &_fz14{
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 700;
+        line-height: normal;
         &_white{
             color: $white-color;
         }
@@ -16,9 +17,12 @@
             color: $white-color;
         }
     }
+    &_fz20{
+        font-size: 20px;
+        line-height: 30px ;
+    }
     &_fz48{
         font-size: 48px;
-        line-height: 60px; 
         &_white{
             color: $white-color;
         }

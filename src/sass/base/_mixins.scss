@@ -9,5 +9,11 @@
         z-index: -1;
         top: -25%;
         left: -2px;
+        
+    }
+   &:hover{
+        content: '';
+        color: $blue-color;
+        transition: all 1s ease;
     }
 }

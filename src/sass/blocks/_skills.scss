@@ -1,0 +1,51 @@
+.skills{
+    padding-top: 150px;
+    &__title{
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before{
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle{
+        text-align: center;
+    }
+    &__ratings{
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(2, minmax(70px, auto)) / repeat(2, minmax(500px, auto));
+        column-gap: 45px;
+        row-gap: 35px;
+        &-item{
+            display: grid;
+            grid-template: minmax(21px, auto) 14px / 200px 35px;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        &-title{
+            position: relative;
+            padding: 2px 0 0 13px;
+            @include before_circle;
+        }
+        &-percent{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &-line{
+            width: 540px;
+            height: 14px;
+            background-color: $white-color;
+            border-radius: 4px;
+            grid-column: 1 / 2;
+            span{
+                display: block;
+                background-color: $pink-color;
+                border-radius: 4px;
+                height: 100%;
+            }
+        }
+    }
+}
